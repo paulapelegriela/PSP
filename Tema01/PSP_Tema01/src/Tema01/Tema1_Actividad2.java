@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
 public class Tema1_Actividad2 {
     public static void main(String[] args) {
          try {
-            ProcessBuilder builder = new ProcessBuilder("cmd", "/c", "dir C:\\DAM2\\PSP"); 
+            ProcessBuilder builder = new ProcessBuilder("cmd", "/c", "dir C:\\DAM2\\PSP"); //poner el directorio exacto
             Process proceso = builder.start();
 
             BufferedReader entrada = new BufferedReader(new InputStreamReader(proceso.getInputStream()));

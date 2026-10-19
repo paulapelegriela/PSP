@@ -28,7 +28,7 @@ public class Tema1_Actividad2 {
                 linea = entrada.readLine();
             };
 
-            int estadoSalida = proceso.waitFor(); //Espera que el proceso termine --> 0 correcto, 1,2 --> algun problema
+            int estadoSalida = proceso.waitFor(); //Espera hasta que el proceso termine --> 0 correcto, 1,2 --> algun problema
             System.out.println("El proceso ha salido con: " + estadoSalida);
             entrada.close();
          }
